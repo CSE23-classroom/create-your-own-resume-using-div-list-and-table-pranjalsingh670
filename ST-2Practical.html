@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+            margin: 0;
+        }
+        header{
+            margin-left: 50px;
+            font-weight: bolder;
+            font-size: 40px;
+            background-color: lightgreen;
+        }
+        .row{
+            display: flex;
+        }
+        #top{
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+        }
+        #button1{
+            height: 20px;
+            background-color: black;
+            color: red;
+            border: solid 0.5px white;
+            margin-top:20px;
+            margin-left: 400px;
+        }
+        .button{
+            height: 20px;
+            background-color: black;
+            color: red;
+            border: solid 0.5px white;
+            margin-top:20px;
+            margin-left: 5px;
+        }
+        .mini{
+            border: solid 1px black;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            margin-right: 5px;
+            width: 500px;
+        }
+        .row{
+            margin: 50px;
+        }
+        #image1{
+            background-image: url(https://4.imimg.com/data4/DP/QA/MY-6913865/mens-check-shirts-500x500.jpg);
+            width:120px;
+            height:150px;
+            display: block;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin:10px;
+        }
+   
+    </style>
+</head>
+<body>
+    <div id="top">
+      <header> Ecommerce Website</header>
+      <button id="button1">Fashion</button>
+      <button class="button">Electronics</button>
+      <button class="button">Beauty</button>
+    </div>
+    <div class="row">
+        <div class="mini">
+            <div id="image1"></div>
+            <div>
+                <div>Mens designer Blue Check Shirt</div>
+                <div>
+                    <div> Color : Blue</div>
+                    <div> Fabric : cotton</div>
+                </div>
+            </div>
+        </div>
+     </div>
+                
+</body>
+</html>
