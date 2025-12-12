@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1000px;
+        }
+        .top{
+            display: grid;
+            grid-template-rows: 20px 20px 20px auto 20px;
+            background-color: #CCCCCC;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        #center{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 10px;
+            height: 150px;
+            gap: 10px;
+        }
+        .mid{
+            background-color:#999999 ;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .parent{
+            margin-left: 0 auto;
+        }
+        @media(max-width:900px){
+            #center{
+                text-align: center;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media(max-width:600px){
+            #center{
+                text-align: center;
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="top">Logo</div>
+        <div class="top">Header</div>
+        <div class="top">Text Area</div>
+        <div id="center">
+            <div class="mid">Box1</div>
+            <div class="mid">Box2</div>
+            <div class="mid">Box3</div>
+        </div>
+        <div class="top">footer</div>
+    </div>
+</body>
+</html>
